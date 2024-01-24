@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchical Tree Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls-container">
+        <div>
+            <label for="node-type">Node Type</label>
+            <select id="node-type">
+                <option value="single">Single Node</option>
+                <option value="child">Child Node</option>
+                <option value="parent">Parent Node</option>
+            </select>
+        </div>
+        <div>
+            <label for="node-value">Write the node value here:</label>
+            <input type="text" id="node-value" placeholder="Node Value">
+            <button id="add-node">Add Node</button>
+        </div>
+    </div>
+
+    <div id="selected-node-container">
+        <div>
+            <span>Selected Node:</span>
+            <input type="text" id="selected-node-name" placeholder="Node Name">
+            <button id="update-node">Update</button>
+            <button id="delete-node">Delete</button>
+        </div>
+    </div>
+
+    <div id="tree-container">
+        <!-- Tree structure will be dynamically generated here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

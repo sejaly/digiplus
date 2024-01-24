@@ -1,0 +1,52 @@
+
+
+
+#controls-container, #selected-node-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#controls-container div, #selected-node-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+#controls-container label, #selected-node-container span {
+    margin-bottom: 5px;
+}
+
+#tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.node {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.node span {
+    margin-right: 10px;
+}
+
+.add-child, .add-parent {
+    margin-top: 5px;
+}
+
+#controls-container button, #selected-node-container button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#selected-node-container input {
+    margin-right: 10px;
+}
